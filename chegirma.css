@@ -1,0 +1,656 @@
+/* ================================================
+   VLTG — chegirma.css
+   Faqat CHEGIRMA sahifasi uchun maxsus uslublar
+   ================================================ */
+
+/* ── SALE HERO ───────────────────────────────── */
+.sale-hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-top: var(--header-h);
+}
+
+.sale-hero__bg {
+  position: absolute;
+  inset: 0;
+}
+.sale-hero__bg img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+  transform: scale(1.04);
+  transition: transform 8s ease-out;
+}
+.sale-hero:hover .sale-hero__bg img { transform: scale(1); }
+
+.sale-hero__overlay {
+  position: absolute; inset: 0;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.6) 55%, rgba(0,0,0,0.25) 100%),
+    linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%);
+}
+
+/* "SALE" fonida katta yozuv */
+.sale-hero__bg-text {
+  position: absolute;
+  right: -3rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(-8deg);
+  font-family: var(--font-display);
+  font-size: clamp(12rem, 24vw, 22rem);
+  line-height: 0.85;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(227,28,28,0.12);
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.sale-hero__content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding-block: 5rem;
+}
+
+.sale-hero__eyebrow {
+  font-family: var(--font-cond);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.sale-hero__eyebrow::before {
+  content: '';
+  display: block;
+  width: 28px; height: 2px;
+  background: var(--clr-accent);
+}
+
+.sale-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 14vw, 12rem);
+  line-height: 0.88;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.sale-hero__title em {
+  font-style: normal;
+  color: var(--clr-accent);
+}
+
+.sale-hero__sub {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--clr-text-2);
+  line-height: 1.65;
+  max-width: 420px;
+  margin-bottom: 2.25rem;
+}
+
+/* Countdown hero ichida */
+.hero-countdown {
+  margin-bottom: 2.5rem;
+}
+.hero-countdown__label {
+  font-family: var(--font-cond);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--clr-text-2);
+  margin-bottom: 0.85rem;
+}
+.hero-countdown__units {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.hcd-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid var(--clr-border);
+  border-radius: 10px;
+  padding: 0.75rem 1.1rem;
+  min-width: 72px;
+  backdrop-filter: blur(8px);
+}
+.hcd-num {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  line-height: 1;
+  color: #fff;
+}
+.hcd-lbl {
+  font-family: var(--font-cond);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--clr-text-3);
+  margin-top: 3px;
+}
+.hcd-sep {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--clr-accent);
+  margin-bottom: 0.5rem;
+}
+
+.sale-hero__cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Chegirma maxsus tugma */
+.btn--sale-primary {
+  background: var(--clr-accent);
+  color: #fff;
+  border: 2px solid var(--clr-accent);
+  padding: 0.85rem 2.25rem;
+  font-size: 0.9rem;
+  box-shadow: 0 0 0 0 rgba(227,28,28,0);
+  transition: background 170ms, border-color 170ms, transform 170ms, box-shadow 400ms;
+}
+.btn--sale-primary:hover {
+  background: var(--clr-accent-h);
+  border-color: var(--clr-accent-h);
+  box-shadow: 0 0 0 8px rgba(227,28,28,0.15), 0 10px 30px rgba(227,28,28,0.4);
+  transform: translateY(-3px);
+}
+
+/* ── CHEGIRMA DARAJALARI ─────────────────────── */
+.discount-tiers {
+  background: var(--clr-bg-2);
+  border-top: 1px solid var(--clr-border);
+  border-bottom: 1px solid var(--clr-border);
+  padding-block: 2rem;
+}
+
+.tiers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.tier-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 1.75rem 1.5rem;
+  border: 1px solid var(--clr-border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  cursor: pointer;
+  transition: transform 250ms var(--ease), border-color 250ms, box-shadow 250ms;
+}
+.tier-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--clr-accent);
+  box-shadow: 0 12px 32px rgba(227,28,28,0.2);
+}
+.tier-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--tier-from) 0%, var(--tier-to) 100%);
+  opacity: 0.08;
+  transition: opacity 250ms;
+}
+.tier-card:hover::before { opacity: 0.14; }
+
+.tier-card--10 { --tier-from: #f59e0b; --tier-to: #d97706; }
+.tier-card--20 { --tier-from: #e31c1c; --tier-to: #991111; }
+.tier-card--30 { --tier-from: #e31c1c; --tier-to: #6b0000; }
+.tier-card--40 { --tier-from: #7f1d1d; --tier-to: #450a0a; }
+
+.tier-card__pct {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  line-height: 0.9;
+  color: var(--clr-accent);
+}
+.tier-card--10 .tier-card__pct { color: #f59e0b; }
+
+.tier-card__label {
+  font-family: var(--font-cond);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--clr-text-2);
+  margin-bottom: 0.35rem;
+}
+
+.tier-card__cat {
+  font-size: 0.8rem;
+  color: var(--clr-text-3);
+}
+
+.tier-card__arrow {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  font-size: 1.1rem;
+  color: var(--clr-accent);
+  opacity: 0;
+  transform: translateX(-6px);
+  transition: opacity 200ms, transform 200ms var(--ease);
+}
+.tier-card:hover .tier-card__arrow { opacity: 1; transform: translateX(0); }
+
+/* ── PROMO KARTALAR ──────────────────────────── */
+.promo-cards-section {
+  padding: 3rem 0 0;
+  background: var(--clr-bg);
+}
+
+.promo-grid-sale {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.promo-s-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.promo-s-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid var(--clr-border);
+  cursor: pointer;
+}
+.promo-s-card--tall { min-height: 480px; }
+.promo-s-right .promo-s-card { min-height: 0; aspect-ratio: 16/9; }
+
+.promo-s-card img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 480ms var(--ease);
+}
+.promo-s-card:hover img { transform: scale(1.06); }
+
+.promo-s-card__overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.1) 55%);
+}
+
+.promo-s-card__content {
+  position: relative;
+  z-index: 2;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.promo-s-card__badge {
+  display: inline-block;
+  font-family: var(--font-cond);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.28rem 0.65rem;
+  border-radius: 3px;
+  background: var(--clr-accent);
+  color: #fff;
+  margin-bottom: 0.6rem;
+}
+
+.promo-s-card__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  line-height: 0.92;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+
+.promo-s-card__desc {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 0.75rem;
+}
+
+.promo-s-card__cta {
+  font-family: var(--font-cond);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  opacity: 0;
+  transform: translateX(-8px);
+  display: block;
+  transition: opacity 220ms, transform 220ms var(--ease);
+}
+.promo-s-card:hover .promo-s-card__cta { opacity: 1; transform: translateX(0); }
+
+/* Keng banner */
+.promo-s-wide {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--clr-border);
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+.promo-s-wide img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 60%;
+  transition: transform 480ms var(--ease);
+}
+.promo-s-wide:hover img { transform: scale(1.05); }
+
+.promo-s-wide__overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.5) 60%, rgba(0,0,0,0.2) 100%);
+}
+
+.promo-s-wide__content {
+  position: relative; z-index: 2;
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.promo-s-wide__badge {
+  font-family: var(--font-cond);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 0.28rem 0.65rem;
+  border-radius: 3px;
+  background: #f59e0b;
+  color: #000;
+  white-space: nowrap;
+}
+
+.promo-s-wide__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3vw, 2.25rem);
+  line-height: 1;
+  color: #fff;
+  flex: 1;
+}
+
+.promo-s-wide__cta {
+  font-family: var(--font-cond);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  white-space: nowrap;
+  transition: letter-spacing 200ms;
+}
+.promo-s-wide:hover .promo-s-wide__cta { letter-spacing: 0.18em; }
+
+/* ── CHEGIRMA CHIP ────────────────────────────── */
+.chip--sale.active,
+.chip--sale:hover {
+  background: var(--clr-accent);
+  border-color: var(--clr-accent);
+  color: #fff;
+}
+
+/* ── MAHSULOT SONI ───────────────────────────── */
+.products-count {
+  font-family: var(--font-cond);
+  font-size: 0.8rem;
+  color: var(--clr-text-2);
+}
+
+/* ── SALE KARTA ──────────────────────────────── */
+.sale-card {
+  border-color: rgba(227,28,28,0.15);
+}
+.sale-card:hover {
+  border-color: rgba(227,28,28,0.35);
+  box-shadow: 0 18px 45px rgba(227,28,28,0.12);
+}
+
+/* Ribbon (lenta) */
+.sale-card__ribbon {
+  position: absolute;
+  top: 14px; right: -26px;
+  background: var(--clr-accent);
+  color: #fff;
+  font-family: var(--font-cond);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 2.5rem;
+  transform: rotate(35deg);
+  z-index: 3;
+  white-space: nowrap;
+}
+.sale-card__ribbon--green { background: #16a34a; }
+
+/* Narx guruhi */
+.price-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.08rem;
+}
+
+.saving-tag {
+  font-family: var(--font-cond);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #16a34a;
+}
+
+/* ── A'ZOLIK BANNERI ─────────────────────────── */
+.membership-banner {
+  background: var(--clr-bg-2);
+  border-top: 1px solid var(--clr-border);
+  padding-block: 5rem;
+  overflow: hidden;
+}
+
+.membership-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.membership-eyebrow {
+  font-family: var(--font-cond);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.membership-eyebrow::before {
+  content: '';
+  display: block;
+  width: 20px; height: 2px;
+  background: var(--clr-accent);
+}
+
+.membership-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 0.95;
+  margin-bottom: 1.75rem;
+}
+.membership-title em { font-style: normal; color: var(--clr-accent); }
+
+.membership-perks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 2.25rem;
+}
+.membership-perks li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--clr-text-2);
+}
+.membership-perks li svg {
+  width: 18px; height: 18px;
+  stroke: var(--clr-accent);
+  flex-shrink: 0;
+}
+
+.membership-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+/* A'zolik kartasi */
+.membership-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.membership-card {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 16/10;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #1a0000 0%, #2d0505 50%, #111 100%);
+  border: 1px solid rgba(227,28,28,0.3);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(227,28,28,0.1);
+  transition: transform 350ms var(--ease), box-shadow 350ms var(--ease);
+}
+.membership-card:hover {
+  transform: translateY(-6px) rotate(-1deg);
+  box-shadow: 0 32px 80px rgba(0,0,0,0.7), 0 0 40px rgba(227,28,28,0.15);
+}
+
+.membership-card__glow {
+  position: absolute;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(227,28,28,0.22) 0%, transparent 70%);
+  right: -50px; top: -50px;
+  pointer-events: none;
+}
+
+.membership-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.membership-card__level {
+  font-family: var(--font-cond);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  border: 1px solid var(--clr-accent);
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+}
+
+.membership-card__mid {
+  text-align: center;
+}
+.membership-card__pct {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--clr-accent);
+}
+.membership-card__plbl {
+  font-family: var(--font-cond);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--clr-text-2);
+}
+
+.membership-card__bot {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.membership-card__name {
+  font-family: var(--font-cond);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.membership-card__since {
+  font-size: 0.7rem;
+  color: var(--clr-text-3);
+}
+
+/* ── RESPONSIVE ──────────────────────────────── */
+@media (max-width: 1100px) {
+  .tiers-grid { grid-template-columns: repeat(2, 1fr); }
+  .membership-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .membership-visual { order: -1; }
+  .membership-card { max-width: 320px; }
+}
+
+@media (max-width: 900px) {
+  .promo-grid-sale { grid-template-columns: 1fr; }
+  .promo-s-card--tall { min-height: 320px; }
+  .promo-s-right { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+  .promo-s-right .promo-s-card { aspect-ratio: 4/3; }
+  .sale-hero__bg-text { display: none; }
+}
+
+@media (max-width: 640px) {
+  .sale-hero__title { font-size: clamp(4rem, 18vw, 6rem); }
+  .tiers-grid { grid-template-columns: repeat(2, 1fr); }
+  .hcd-unit { min-width: 58px; padding: 0.6rem 0.8rem; }
+  .hcd-num { font-size: 2rem; }
+  .promo-s-right { grid-template-columns: 1fr; }
+  .promo-s-wide__content { padding: 1.25rem 1.5rem; flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+  .membership-card { max-width: 100%; }
+  .sale-hero__cta { flex-direction: column; }
+  .sale-hero__cta .btn { width: 100%; justify-content: center; }
+}
+
+@media (max-width: 420px) {
+  .tiers-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VLTG — Chegirma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="pages.css" />
+  <link rel="stylesheet" href="chegirma.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
+      <a href="../index.html" class="logo">VL<span>T</span>G</a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="erkaklar.html" class="nav-link">Erkaklar</a></li>
+          <li><a href="ayollar.html" class="nav-link">Ayollar</a></li>
+          <li><a href="bolalar.html" class="nav-link">Bolalar</a></li>
+          <li><a href="sport.html" class="nav-link">Sport</a></li>
+          <li><a href="chegirma.html" class="nav-link nav-link--sale active">Chegirma</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#" class="header-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></a>
+        <a href="#" class="header-icon cart-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-badge">3</span>
+        </a>
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+      </div>
+    </div>
+    <div class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li><a href="erkaklar.html">Erkaklar</a></li>
+        <li><a href="ayollar.html">Ayollar</a></li>
+        <li><a href="bolalar.html">Bolalar</a></li>
+        <li><a href="sport.html">Sport</a></li>
+        <li><a href="chegirma.html" class="sale-link">Chegirma</a></li>
+        <li class="mobile-nav-divider"></li>
+        <li><a href="#">Savat (3)</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==============================
+         SALE HERO — katta qizil banner
+         ============================== -->
+    <section class="sale-hero">
+      <div class="sale-hero__bg">
+        <img src="img/RunnerX1.jpg" alt="Chegirma" />
+        <div class="sale-hero__overlay"></div>
+      </div>
+
+      <!-- Diagonal "SALE" background text -->
+      <div class="sale-hero__bg-text" aria-hidden="true">SALE</div>
+
+      <div class="sale-hero__content">
+        <div class="container">
+          <p class="sale-hero__eyebrow">Cheklangan Vaqt Taklifi</p>
+          <h1 class="sale-hero__title">
+            40%<br />GACHA<br /><em>CHEGIRMA</em>
+          </h1>
+          <p class="sale-hero__sub">
+            A'zolarga maxsus tanlab olingan modellarda ulkan chegirmalar.<br />
+            Faqat do'stimiz hafta oxirigacha davom etadi.
+          </p>
+
+          <!-- Countdown -->
+          <div class="hero-countdown">
+            <p class="hero-countdown__label">Taklif tugashiga qoldi:</p>
+            <div class="hero-countdown__units">
+              <div class="hcd-unit">
+                <span class="hcd-num">02</span>
+                <span class="hcd-lbl">Kun</span>
+              </div>
+              <span class="hcd-sep">:</span>
+              <div class="hcd-unit">
+                <span class="hcd-num">18</span>
+                <span class="hcd-lbl">Soat</span>
+              </div>
+              <span class="hcd-sep">:</span>
+              <div class="hcd-unit">
+                <span class="hcd-num">44</span>
+                <span class="hcd-lbl">Daqiqa</span>
+              </div>
+              <span class="hcd-sep">:</span>
+              <div class="hcd-unit">
+                <span class="hcd-num">09</span>
+                <span class="hcd-lbl">Soniya</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sale-hero__cta">
+            <a href="#mahsulotlar" class="btn btn--sale-primary">Hoziroq Xarid Qilish</a>
+            <a href="#" class="btn btn--ghost">A'zo Bo'lish — Bepul</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         CHEGIRMA DARAJALARI
+         ============================== -->
+    <section class="discount-tiers">
+      <div class="container">
+        <div class="tiers-grid">
+
+          <a href="#mahsulotlar" class="tier-card tier-card--10">
+            <span class="tier-card__pct">10%</span>
+            <span class="tier-card__label">Chegirma</span>
+            <span class="tier-card__cat">Yangi kolleksiya</span>
+            <span class="tier-card__arrow">→</span>
+          </a>
+
+          <a href="#mahsulotlar" class="tier-card tier-card--20">
+            <span class="tier-card__pct">20%</span>
+            <span class="tier-card__label">Chegirma</span>
+            <span class="tier-card__cat">Poyabzal bo'limi</span>
+            <span class="tier-card__arrow">→</span>
+          </a>
+
+          <a href="#mahsulotlar" class="tier-card tier-card--30">
+            <span class="tier-card__pct">30%</span>
+            <span class="tier-card__label">Chegirma</span>
+            <span class="tier-card__cat">Kiyim bo'limi</span>
+            <span class="tier-card__arrow">→</span>
+          </a>
+
+          <a href="#mahsulotlar" class="tier-card tier-card--40">
+            <span class="tier-card__pct">40%</span>
+            <span class="tier-card__label">Chegirma</span>
+            <span class="tier-card__cat">O'tgan mavsum</span>
+            <span class="tier-card__arrow">→</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+         PROMO KARTALAR
+         ============================== -->
+    <section class="promo-cards-section">
+      <div class="container">
+        <div class="promo-grid-sale">
+
+          <!-- Katta karta chap -->
+          <a href="#" class="promo-s-card promo-s-card--tall">
+            <img src="img/fon_krasofkasi.jpg" alt="Poyabzal chegirma" loading="lazy" />
+            <div class="promo-s-card__overlay"></div>
+            <div class="promo-s-card__content">
+              <span class="promo-s-card__badge">−30%</span>
+              <h3 class="promo-s-card__title">Poyabzal<br />Kolleksiyasi</h3>
+              <p class="promo-s-card__desc">300+ dan ortiq model</p>
+              <span class="promo-s-card__cta">Xarid Qilish →</span>
+            </div>
+          </a>
+
+          <!-- O'ng ustun -->
+          <div class="promo-s-right">
+
+            <a href="#" class="promo-s-card">
+              <img src="img/menFashion.jpg" alt="Kiyim chegirma" loading="lazy" />
+              <div class="promo-s-card__overlay"></div>
+              <div class="promo-s-card__content">
+                <span class="promo-s-card__badge">−25%</span>
+                <h3 class="promo-s-card__title">Erkaklar Kiyimi</h3>
+                <span class="promo-s-card__cta">Ko'rish →</span>
+              </div>
+            </a>
+
+            <a href="#" class="promo-s-card">
+              <img src="img/ayollarKiyimi.jpg" alt="Ayollar chegirma" loading="lazy" />
+              <div class="promo-s-card__overlay"></div>
+              <div class="promo-s-card__content">
+                <span class="promo-s-card__badge">−40%</span>
+                <h3 class="promo-s-card__title">Ayollar Kiyimi</h3>
+                <span class="promo-s-card__cta">Ko'rish →</span>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Keng banner -->
+        <a href="#" class="promo-s-wide">
+          <img src="img/chegirmaBackg.jpg" alt="Sport chegirma" loading="lazy" />
+          <div class="promo-s-wide__overlay"></div>
+          <div class="promo-s-wide__content">
+            <span class="promo-s-wide__badge">Maxsus Taklif</span>
+            <h3 class="promo-s-wide__title">Sport to'plami — 2 ta olsang 3-tasi bepul</h3>
+            <span class="promo-s-wide__cta">Hoziroq Foydalaning →</span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ==============================
+         FILTR
+         ============================== -->
+    <div class="filter-bar" id="mahsulotlar">
+      <div class="container filter-bar__inner">
+        <div class="filter-chips">
+          <button class="chip chip--sale active">Hammasi</button>
+          <button class="chip chip--sale">Erkaklar</button>
+          <button class="chip chip--sale">Ayollar</button>
+          <button class="chip chip--sale">Bolalar</button>
+          <button class="chip chip--sale">Poyabzal</button>
+          <button class="chip chip--sale">Kiyim</button>
+        </div>
+        <div class="filter-sort">
+          <span>Saralash:</span>
+          <select>
+            <option>Eng katta chegirma</option>
+            <option>Narx: past → yuqori</option>
+            <option>Narx: yuqori → past</option>
+            <option>Mashhurlik bo'yicha</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==============================
+         CHEGIRMALI MAHSULOTLAR
+         ============================== -->
+    <section class="products-section">
+      <div class="container">
+
+        <div class="section-head">
+          <h2>Chegirmadagi Mahsulotlar</h2>
+          <span class="products-count">124 ta mahsulot topildi</span>
+        </div>
+
+        <div class="products-grid-page">
+
+          <!-- 1 -->
+          <article class="product-card sale-card">
+            <div class="product-card__media">
+              <img src="img/VelocityMid.jpg" alt="Velocity Mid" loading="lazy" />
+              <div class="product-card__badges">
+                <span class="badge badge--sale">−25%</span>
+              </div>
+              <div class="sale-card__ribbon">Eng Ko'p Sotilgan</div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Unisex · Lifestyle</p>
+              <h3 class="product-card__name">Velocity Mid</h3>
+              <div class="product-card__bottom">
+                <div class="price-group">
+                  <span class="product-card__price product-card__price--sale">$119</span>
+                  <span class="product-card__price-orig">$159</span>
+                  <span class="saving-tag">$40 tejash</span>
+                </div>
+                <div class="product-card__colors">
+                  <span class="color-dot" style="background:#111"></span>
+                  <span class="color-dot" style="background:#fff"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="product-card sale-card">
+            <div class="product-card__media">
+              <img src="img/RunnerX1.jpg" alt="Runner X1" loading="lazy" />
+              <div class="product-card__badges">
+                <span class="badge badge--sale">−20%</span>
+              </div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Erkaklar · Yugurish</p>
+              <h3 class="product-card__name">Runner X1</h3>
+              <div class="product-card__bottom">
+                <div class="price-group">
+                  <span class="product-card__price product-card__price--sale">$119</span>
+                  <span class="product-card__price-orig">$149</span>
+                  <span class="saving-tag">$30 tejash</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="product-card sale-card">
+            <div class="product-card__media">
+              <img src="img/StreetClassic.avif" alt="Street Classic" loading="lazy" />
+              <div class="product-card__badges">
+                <span class="badge badge--sale">−30%</span>
+              </div>
+              <div class="sale-card__ribbon sale-card__ribbon--green">Yangi Narx</div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Ayollar · Lifestyle</p>
+              <h3 class="product-card__name">Street Classic</h3>
+              <div class="product-card__bottom">
+                <div class="price-group">
+                  <span class="product-card__price product-card__price--sale">$83</span>
+                  <span class="product-card__price-orig">$119</span>
+                  <span class="saving-tag">$36 tejash</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="product-card sale-card">
+            <div class="product-card__media">
+              <img src="img/ForceTee.jpg" alt="Force Tee" loading="lazy" />
+              <div class="product-card__badges">
+                <span class="badge badge--sale">−40%</span>
+              </div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Erkaklar · Trening</p>
+              <h3 class="product-card__name">Force Tee</h3>
+              <div class="product-card__bottom">
+                <div class="price-group">
+                  <span class="product-card__price product-card__price--sale">$39</span>
+                  <span class="product-card__price-orig">$65</span>
+                  <span class="saving-tag">$26 tejash</span>
+                </div>
+                <div class="product-card__colors">
+                  <span class="color-dot" style="background:#111"></span>
+                  <span class="color-dot" style="background:#fff"></span>
+                  <span class="color-dot" style="background:#e31c1c"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="product-card sale-card">
+            <div class="product-card__media">
+              <img src="img/ShadowLow.webp" alt="Shadow Low" loading="lazy" />
+              <div class="product-card__badges">
+                <span class="badge badge--sale">−15%</span>
+              </div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Ayollar · Lifestyle</p>
+              <h3 class="product-card__name">Shadow Low</h3>
+              <div class="product-card__bottom">
+                <div class="price-group">
+                  <span class="product-card__price product-card__price--sale">$110</span>
+                  <span class="product-card__price-orig">$129</span>
+                  <span class="saving-tag">$19 tejash</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="product-card sale-card">
+            <div class="product-card__media">
+              <img src="img/fon_krasofkasi.jpg" alt="Apex Pro" loading="lazy" />
+              <div class="product-card__badges">
+                <span class="badge badge--sale">−35%</span>
+              </div>
+              <div class="sale-card__ribbon">Oxirgi Dona</div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Erkaklar · Yugurish</p>
+              <h3 class="product-card__name">Apex Pro</h3>
+              <div class="product-card__bottom">
+                <div class="price-group">
+                  <span class="product-card__price product-card__price--sale">$123</span>
+                  <span class="product-card__price-orig">$189</span>
+                  <span class="saving-tag">$66 tejash</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7 -->
+          <article class="product-card sale-card">
+            <div class="product-card__media">
+              <img src="img/driftHoodie.webp" alt="Drift Hoodie" loading="lazy" />
+              <div class="product-card__badges">
+                <span class="badge badge--sale">−20%</span>
+              </div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Unisex · Ko'cha uslubi</p>
+              <h3 class="product-card__name">Drift Hoodie</h3>
+              <div class="product-card__bottom">
+                <div class="price-group">
+                  <span class="product-card__price product-card__price--sale">$76</span>
+                  <span class="product-card__price-orig">$95</span>
+                  <span class="saving-tag">$19 tejash</span>
+                </div>
+                <div class="product-card__colors">
+                  <span class="color-dot" style="background:#1a1a1a"></span>
+                  <span class="color-dot" style="background:#3d2b1f"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8 -->
+          <article class="product-card sale-card">
+            <div class="product-card__media">
+              <img src="img/FutureZB.jpg" alt="Future Z Boot" loading="lazy" />
+              <div class="product-card__badges">
+                <span class="badge badge--sale">−30%</span>
+              </div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Futbol · Botinki</p>
+              <h3 class="product-card__name">Future Z Boot</h3>
+              <div class="product-card__bottom">
+                <div class="price-group">
+                  <span class="product-card__price product-card__price--sale">$122</span>
+                  <span class="product-card__price-orig">$175</span>
+                  <span class="saving-tag">$53 tejash</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 9 -->
+          <article class="product-card sale-card">
+            <div class="product-card__media">
+              <img src="img/TrainigSet.webp" alt="Training Set" loading="lazy" />
+              <div class="product-card__badges">
+                <span class="badge badge--sale">−40%</span>
+              </div>
+              <div class="sale-card__ribbon sale-card__ribbon--green">Maxsus Narx</div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Trening · To'plam</p>
+              <h3 class="product-card__name">Training Set Pro</h3>
+              <div class="product-card__bottom">
+                <div class="price-group">
+                  <span class="product-card__price product-card__price--sale">$87</span>
+                  <span class="product-card__price-orig">$145</span>
+                  <span class="saving-tag">$58 tejash</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 10 -->
+          <article class="product-card sale-card">
+            <div class="product-card__media">
+              <img src="img/HoopMid.webp" alt="Hoop Mid" loading="lazy" />
+              <div class="product-card__badges">
+                <span class="badge badge--sale">−20%</span>
+              </div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Basketbol · Poyabzal</p>
+              <h3 class="product-card__name">Hoop Mid</h3>
+              <div class="product-card__bottom">
+                <div class="price-group">
+                  <span class="product-card__price product-card__price--sale">$120</span>
+                  <span class="product-card__price-orig">$150</span>
+                  <span class="saving-tag">$30 tejash</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 11 -->
+          <article class="product-card sale-card">
+            <div class="product-card__media">
+              <img src="img/LifeStyleJacket.webp" alt="Lifestyle Jacket" loading="lazy" />
+              <div class="product-card__badges">
+                <span class="badge badge--sale">−35%</span>
+              </div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Unisex · Lifestyle</p>
+              <h3 class="product-card__name">Lifestyle Jacket</h3>
+              <div class="product-card__bottom">
+                <div class="price-group">
+                  <span class="product-card__price product-card__price--sale">$94</span>
+                  <span class="product-card__price-orig">$145</span>
+                  <span class="saving-tag">$51 tejash</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 12 -->
+          <article class="product-card sale-card">
+            <div class="product-card__media">
+              <img src="img/RunFastW.webp" alt="Run Fast W" loading="lazy" />
+              <div class="product-card__badges">
+                <span class="badge badge--sale">−30%</span>
+              </div>
+              <div class="sale-card__ribbon">Oxirgi 3 dona</div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Ayollar · Yugurish</p>
+              <h3 class="product-card__name">Run Fast W</h3>
+              <div class="product-card__bottom">
+                <div class="price-group">
+                  <span class="product-card__price product-card__price--sale">$105</span>
+                  <span class="product-card__price-orig">$150</span>
+                  <span class="saving-tag">$45 tejash</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Sahifalash -->
+        <div class="pagination">
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">4</button>
+          <button class="page-btn page-btn--wide">Keyingi →</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==============================
+         A'ZOLIK BANNERI
+         ============================== -->
+    <section class="membership-banner">
+      <div class="container">
+        <div class="membership-inner">
+          <div class="membership-text">
+            <p class="membership-eyebrow">Eksklyuziv Imtiyozlar</p>
+            <h2 class="membership-title">A'zo bo'ling —<br /><em>Ko'proq tejang</em></h2>
+            <ul class="membership-perks">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                A'zolarga qo'shimcha 10% chegirma
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Yangi mahsulotlarga erta kirish
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Bepul yetkazib berish — har doim
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Har xaridda bonus ball yig'ish
+              </li>
+            </ul>
+            <div class="membership-cta">
+              <a href="#" class="btn btn--sale-primary">Bepul Ro'yxatdan O'tish</a>
+              <a href="#" class="btn btn--ghost">Batafsil Ma'lumot →</a>
+            </div>
+          </div>
+          <div class="membership-visual">
+            <div class="membership-card">
+              <div class="membership-card__top">
+                <span class="logo" style="font-size:1.4rem">VL<span>T</span>G</span>
+                <span class="membership-card__level">PREMIUM</span>
+              </div>
+              <div class="membership-card__mid">
+                <span class="membership-card__pct">+10%</span>
+                <span class="membership-card__plbl">Qo'shimcha Chegirma</span>
+              </div>
+              <div class="membership-card__bot">
+                <span class="membership-card__name">Bahodir Solijonov</span>
+                <span class="membership-card__since">A'zo bo'lgan sana: 2024</span>
+              </div>
+              <div class="membership-card__glow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col footer-col--brand">
+            <a href="../index.html" class="logo footer-logo">VL<span>T</span>G</a>
+            <p class="footer-tagline">Yuqori sifat uchun yaratilgan.<br />Ko'chalar uchun dizayn qilingan.</p>
+            <div class="footer-social">
+              <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+              <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+              <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h5 class="footer-col__title">Do'kon</h5>
+            <ul class="footer-links">
+              <li><a href="erkaklar.html">Erkaklar</a></li>
+              <li><a href="ayollar.html">Ayollar</a></li>
+              <li><a href="bolalar.html">Bolalar</a></li>
+              <li><a href="chegirma.html">Chegirma</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5 class="footer-col__title">Yordam</h5>
+            <ul class="footer-links">
+              <li><a href="#">Yetkazib Berish</a></li>
+              <li><a href="#">Qaytarish</a></li>
+              <li><a href="#">O'lcham Jadvali</a></li>
+              <li><a href="#">Buyurtmani Kuzatish</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5 class="footer-col__title">Yangiliklar</h5>
+            <div style="display:flex;flex-direction:column;gap:0.5rem">
+              <input type="email" placeholder="email@manzil.com" class="newsletter-input" />
+              <a href="#" class="btn btn--primary" style="text-align:center">Obuna Bo'lish</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-legal">&copy; 2026 VLTG Sport Kiyimlari. Barcha huquqlar himoyalangan.</p>
+        <div class="footer-legal-links">
+          <a href="#">Maxfiylik Siyosati</a>
+          <a href="#">Foydalanish Shartlari</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

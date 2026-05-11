@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VLTG — Sport</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="pages.css" />
+  <style>
+    /* Sport sahifasi — yashil akcent */
+    .page-hero__overlay { background: linear-gradient(to top, rgba(0,15,5,0.9) 0%, rgba(0,0,0,0.22) 60%); }
+    .page-hero__eyebrow { color: #16a34a; }
+    .page-hero__eyebrow::before { background: #16a34a; }
+    .chip.active, .chip:hover { background: #16a34a; border-color: #16a34a; color:#fff; }
+    .subcat-link.active, .subcat-link:hover { background: #16a34a; border-color: #16a34a; color:#fff; }
+    .sport-cat__content { padding-bottom: 1.5rem; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" />
+      <a href="../index.html" class="logo">VL<span>T</span>G</a>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="erkaklar.html" class="nav-link">Erkaklar</a></li>
+          <li><a href="ayollar.html" class="nav-link">Ayollar</a></li>
+          <li><a href="bolalar.html" class="nav-link">Bolalar</a></li>
+          <li><a href="sport.html" class="nav-link active">Sport</a></li>
+          <li><a href="chegirma.html" class="nav-link nav-link--sale">Chegirma</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#" class="header-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></a>
+        <a href="#" class="header-icon cart-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-badge">3</span>
+        </a>
+        <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+      </div>
+    </div>
+    <div class="mobile-nav">
+      <ul class="mobile-nav-list">
+        <li><a href="erkaklar.html">Erkaklar</a></li>
+        <li><a href="ayollar.html">Ayollar</a></li>
+        <li><a href="bolalar.html">Bolalar</a></li>
+        <li><a href="sport.html">Sport</a></li>
+        <li><a href="chegirma.html" class="sale-link">Chegirma</a></li>
+        <li class="mobile-nav-divider"></li>
+        <li><a href="#">Savat (3)</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="page-hero__img">
+      <img src="img/sportBackg.jpg" alt="Sport kolleksiyasi" />
+    </div>
+    <div class="page-hero__overlay"></div>
+    <div class="page-hero__content">
+      <p class="page-hero__eyebrow">Professional Daraja</p>
+      <h1 class="page-hero__title">SPORT</h1>
+      <p class="page-hero__desc">Har bir sport turi uchun maxsus ishlab chiqilgan professional kiyimlar va jihozlar.</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="container">
+
+      <!-- Sport kategoriyalar panjara -->
+      <div style="padding-top:2.5rem">
+        <div class="section-head">
+          <h2>Sport Turlari</h2>
+          <a href="#">Barchasini Ko'rish →</a>
+        </div>
+        <div class="sport-categories">
+
+          <a href="#yugurish" class="sport-cat">
+            <img src="img/nike’s-best-cushioned-shoes-for-running-and-walking.avif" alt="Yugurish" loading="lazy" />
+            <div class="sport-cat__overlay"></div>
+            <div class="sport-cat__content">
+              <h3 class="sport-cat__title">Yugurish</h3>
+              <span class="sport-cat__count">148 ta mahsulot</span>
+            </div>
+          </a>
+
+          <a href="#trening" class="sport-cat">
+            <img src="img/trening.jpg" alt="Trening" loading="lazy" />
+            <div class="sport-cat__overlay"></div>
+            <div class="sport-cat__content">
+              <h3 class="sport-cat__title">Trening</h3>
+              <span class="sport-cat__count">94 ta mahsulot</span>
+            </div>
+          </a>
+
+          <a href="#futbol" class="sport-cat">
+            <img src="img/football.avif" alt="Futbol" loading="lazy" />
+            <div class="sport-cat__overlay"></div>
+            <div class="sport-cat__content">
+              <h3 class="sport-cat__title">Futbol</h3>
+              <span class="sport-cat__count">76 ta mahsulot</span>
+            </div>
+          </a>
+
+          <a href="#basketbol" class="sport-cat">
+            <img src="img/basketball.webp" alt="Basketbol" loading="lazy" />
+            <div class="sport-cat__overlay"></div>
+            <div class="sport-cat__content">
+              <h3 class="sport-cat__title">Basketbol</h3>
+              <span class="sport-cat__count">58 ta mahsulot</span>
+            </div>
+          </a>
+
+          <a href="#yoga" class="sport-cat">
+            <img src="img/yoga.jpg" alt="Yoga" loading="lazy" />
+            <div class="sport-cat__overlay"></div>
+            <div class="sport-cat__content">
+              <h3 class="sport-cat__title">Yoga</h3>
+              <span class="sport-cat__count">42 ta mahsulot</span>
+            </div>
+          </a>
+
+          <a href="#suzish" class="sport-cat">
+            <img src="img/suzish.jpg" alt="Suzish" loading="lazy" />
+            <div class="sport-cat__overlay"></div>
+            <div class="sport-cat__content">
+              <h3 class="sport-cat__title">Suzish</h3>
+              <span class="sport-cat__count">34 ta mahsulot</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Filtr -->
+    <div class="filter-bar" id="yugurish">
+      <div class="container filter-bar__inner">
+        <div class="filter-chips">
+          <button class="chip active">Hammasi</button>
+          <button class="chip">Yugurish</button>
+          <button class="chip">Trening</button>
+          <button class="chip">Futbol</button>
+          <button class="chip">Basketbol</button>
+          <button class="chip">Yoga</button>
+        </div>
+        <div class="filter-sort">
+          <span>Saralash:</span>
+          <select>
+            <option>Mashhurlik bo'yicha</option>
+            <option>Narx: past → yuqori</option>
+            <option>Narx: yuqori → past</option>
+            <option>Eng yangi</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <section class="products-section">
+      <div class="container">
+
+        <div class="section-head">
+          <h2>Sport Mahsulotlari</h2>
+          <span style="font-family:var(--font-cond);font-size:0.8rem;color:var(--clr-text-2)">452 ta mahsulot</span>
+        </div>
+
+        <div class="products-grid-page">
+
+          <!-- 1 -->
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="img/ApexProRace.jpg" alt="Apex Pro" loading="lazy" />
+              <div class="product-card__badges"><span class="badge badge--new">Yangi</span></div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Yugurish · Musobaqa</p>
+              <h3 class="product-card__name">Apex Pro Race</h3>
+              <div class="product-card__bottom">
+                <span class="product-card__price">$229</span>
+                <div class="product-card__colors">
+                  <span class="color-dot" style="background:#111"></span>
+                  <span class="color-dot" style="background:#e31c1c"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="img/FutureZB.jpg" alt="Future Z Boot" loading="lazy" />
+              <div class="product-card__badges"><span class="badge badge--hot">Trend</span></div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Futbol · Botinki</p>
+              <h3 class="product-card__name">Future Z Boot</h3>
+              <div class="product-card__bottom">
+                <span class="product-card__price">$175</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="img/trainingTeePro.jpg" alt="Training Tee Pro" loading="lazy" />
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Trening · Futbolka</p>
+              <h3 class="product-card__name">Training Tee Pro</h3>
+              <div class="product-card__bottom">
+                <span class="product-card__price">$58</span>
+                <div class="product-card__colors">
+                  <span class="color-dot" style="background:#111"></span>
+                  <span class="color-dot" style="background:#1a3a2e"></span>
+                  <span class="color-dot" style="background:#e31c1c"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="img/HoopMid.webp" alt="Hoop Mid" loading="lazy" />
+              <div class="product-card__badges"><span class="badge badge--sale">−20%</span></div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Basketbol · Poyabzal</p>
+              <h3 class="product-card__name">Hoop Mid</h3>
+              <div class="product-card__bottom">
+                <div>
+                  <span class="product-card__price product-card__price--sale">$120</span>
+                  <span class="product-card__price-orig">$150</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5 -->
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="img/YogaFlexSet.avif" alt="Yoga Flex Set" loading="lazy" />
+              <div class="product-card__badges"><span class="badge badge--new">Yangi</span></div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Yoga · To'plam</p>
+              <h3 class="product-card__name">Yoga Flex Set</h3>
+              <div class="product-card__bottom">
+                <span class="product-card__price">$110</span>
+                <div class="product-card__colors">
+                  <span class="color-dot" style="background:#111"></span>
+                  <span class="color-dot" style="background:#2d1a2e"></span>
+                  <span class="color-dot" style="background:#1a3a2e"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6 -->
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="img/elite.webp" alt="Speed Elite" loading="lazy" />
+              <div class="product-card__badges"><span class="badge badge--lim">Cheklangan</span></div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Yugurish · Elite</p>
+              <h3 class="product-card__name">Speed Elite</h3>
+              <div class="product-card__bottom">
+                <span class="product-card__price">$299</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- 7 -->
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="img/GameShortP.webp" alt="Game Short" loading="lazy" />
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Basketbol · Shim</p>
+              <h3 class="product-card__name">Game Short</h3>
+              <div class="product-card__bottom">
+                <span class="product-card__price">$55</span>
+                <div class="product-card__colors">
+                  <span class="color-dot" style="background:#111"></span>
+                  <span class="color-dot" style="background:#1a3a60"></span>
+                  <span class="color-dot" style="background:#e31c1c"></span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 8 -->
+          <article class="product-card">
+            <div class="product-card__media">
+              <img src="img/SprintSpike.webp" alt="Sprint Spike" loading="lazy" />
+              <div class="product-card__badges"><span class="badge badge--sale">−10%</span></div>
+              <div class="product-card__actions">
+                <a href="#" class="btn btn--primary btn--sm" style="flex:1">Savatga</a>
+                <button class="product-card__fav"><svg viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__cat">Yugurish · Trekling</p>
+              <h3 class="product-card__name">Sprint Spike</h3>
+              <div class="product-card__bottom">
+                <div>
+                  <span class="product-card__price product-card__price--sale">$135</span>
+                  <span class="product-card__price-orig">$150</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="pagination">
+          <button class="page-btn active">1</button>
+          <button class="page-btn">2</button>
+          <button class="page-btn">3</button>
+          <button class="page-btn">4</button>
+          <button class="page-btn">5</button>
+          <button class="page-btn page-btn--wide">Keyingi →</button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col footer-col--brand">
+            <a href="../index.html" class="logo footer-logo">VL<span>T</span>G</a>
+            <p class="footer-tagline">Yuqori sifat uchun yaratilgan.<br />Ko'chalar uchun dizayn qilingan.</p>
+            <div class="footer-social">
+              <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+              <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+              <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h5 class="footer-col__title">Do'kon</h5>
+            <ul class="footer-links">
+              <li><a href="erkaklar.html">Erkaklar</a></li>
+              <li><a href="ayollar.html">Ayollar</a></li>
+              <li><a href="bolalar.html">Bolalar</a></li>
+              <li><a href="chegirma.html">Chegirma</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5 class="footer-col__title">Yordam</h5>
+            <ul class="footer-links">
+              <li><a href="#">Yetkazib Berish</a></li>
+              <li><a href="#">Qaytarish</a></li>
+              <li><a href="#">O'lcham Jadvali</a></li>
+              <li><a href="#">Buyurtmani Kuzatish</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5 class="footer-col__title">Yangiliklar</h5>
+            <div style="display:flex;flex-direction:column;gap:0.5rem">
+              <input type="email" placeholder="email@manzil.com" class="newsletter-input" />
+              <a href="#" class="btn btn--primary" style="text-align:center">Obuna Bo'lish</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-legal">&copy; 2026 VLTG Sport Kiyimlari. Barcha huquqlar himoyalangan.</p>
+        <div class="footer-legal-links">
+          <a href="#">Maxfiylik Siyosati</a>
+          <a href="#">Foydalanish Shartlari</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
