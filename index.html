@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="components.css" />
 </head>
 <body>
 
@@ -31,12 +32,12 @@
       </nav>
 
       <div class="header-actions">
-        <a href="#" class="header-icon" aria-label="Qidirish">
+        <a href="#" class="header-icon" data-open-search aria-label="Qidirish">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         </a>
-        <a href="#" class="header-icon cart-icon" aria-label="Savat">
+        <a href="#" class="header-icon cart-icon" data-open-cart aria-label="Savat">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-          <span class="cart-badge">3</span>
+          <span class="cart-badge is-empty" data-cart-count>0</span>
         </a>
         <label for="nav-toggle" class="hamburger" aria-label="Menyu">
           <span></span><span></span><span></span>
@@ -48,14 +49,14 @@
     <!-- Mobil menyu -->
     <div class="mobile-nav">
       <ul class="mobile-nav-list">
-        <li><a href="#">Erkaklar</a></li>
-        <li><a href="#">Ayollar</a></li>
-        <li><a href="#">Bolalar</a></li>
-        <li><a href="#">Sport</a></li>
-        <li><a href="#" class="sale-link">Chegirma</a></li>
+        <li><a href="erkaklar.html">Erkaklar</a></li>
+        <li><a href="ayollar.html">Ayollar</a></li>
+        <li><a href="bolalar.html">Bolalar</a></li>
+        <li><a href="sport.html">Sport</a></li>
+        <li><a href="chegirma.html" class="sale-link">Chegirma</a></li>
         <li class="mobile-nav-divider"></li>
-        <li><a href="#">Qidirish</a></li>
-        <li><a href="#">Savat (3)</a></li>
+        <li><a href="#" data-open-search>Qidirish</a></li>
+        <li><a href="#" data-open-cart>Savat (<span data-cart-count>0</span>)</a></li>
       </ul>
     </div>
   </header>
@@ -121,7 +122,7 @@
         <header class="section-header">
           <p class="section-eyebrow">Siz Uchun Tanlangan</p>
           <h2 class="section-title">Eng Mashhur</h2>
-          <a href="#" class="section-link">Barchasini Ko'rish →</a>
+          <a href="sport.html" class="section-link">Barchasini Ko'rish →</a>
         </header>
 
         <div class="products-grid">
@@ -199,8 +200,8 @@
 
         <div class="categories-grid">
 
-          <a href="#" class="cat-card cat-card--large">
-            <img src="img/nike’s-best-cushioned-shoes-for-running-and-walking.avif" alt="Yugurish" loading="lazy" />
+          <a href="sport.html#yugurish" class="cat-card cat-card--large">
+            <img src="img/FutureStarB.avif" alt="Yugurish" loading="lazy" />
             <div class="cat-card__overlay"></div>
             <div class="cat-card__content">
               <h3 class="cat-card__title">Yugurish</h3>
@@ -208,7 +209,7 @@
             </div>
           </a>
 
-          <a href="#" class="cat-card">
+          <a href="sport.html#trening" class="cat-card">
             <img src="img/Trainig.webp" alt="Trening" loading="lazy" />
             <div class="cat-card__overlay"></div>
             <div class="cat-card__content">
@@ -217,7 +218,7 @@
             </div>
           </a>
 
-          <a href="#" class="cat-card">
+          <a href="erkaklar.html#lifestyle" class="cat-card">
             <img src="img/LIfeStyle.jpg" alt="Lifestyle" loading="lazy" />
             <div class="cat-card__overlay"></div>
             <div class="cat-card__content">
@@ -226,7 +227,7 @@
             </div>
           </a>
 
-          <a href="#" class="cat-card">
+          <a href="sport.html#futbol" class="cat-card">
             <img src="img/Football.webp" alt="Futbol" loading="lazy" />
             <div class="cat-card__overlay"></div>
             <div class="cat-card__content">
@@ -235,7 +236,7 @@
             </div>
           </a>
 
-          <a href="#" class="cat-card">
+          <a href="sport.html#basketbol" class="cat-card">
             <img src="img/basketball.webp" alt="Basketbol" loading="lazy" />
             <div class="cat-card__overlay"></div>
             <div class="cat-card__content">
@@ -256,7 +257,7 @@
         <header class="section-header">
           <p class="section-eyebrow">Endi Keldi</p>
           <h2 class="section-title">Yangi Mahsulotlar</h2>
-          <a href="#" class="section-link">Barchasini Ko'rish →</a>
+          <a href="erkaklar.html" class="section-link">Barchasini Ko'rish →</a>
         </header>
 
         <div class="arrivals-grid">
@@ -334,8 +335,8 @@
           A'zolarga maxsus tanlab olingan modellarda chegirmalar.<br />Yakshanba yarim kechagacha.
         </p>
         <div class="promo-banner__cta">
-          <a href="#" class="btn btn--primary btn--lg">Taklifni Olish</a>
-          <a href="#" class="btn btn--ghost btn--lg">Bepul Ro'yxatdan O'tish</a>
+          <a href="chegirma.html" class="btn btn--primary btn--lg">Taklifni Olish</a>
+          <a href="#" class="btn btn--ghost btn--lg" data-register>Bepul Ro'yxatdan O'tish</a>
         </div>
         <div class="promo-countdown">
           <div class="countdown-unit">
@@ -410,7 +411,7 @@
         <div class="footer-grid">
 
           <div class="footer-col footer-col--brand">
-            <a href="#" class="logo footer-logo">VL<span>T</span>G</a>
+            <a href="index.html" class="logo footer-logo">VL<span>T</span>G</a>
             <p class="footer-tagline">Yuqori sifat uchun yaratilgan.<br />Ko'chalar uchun dizayn qilingan.</p>
             <div class="footer-social">
               <a href="#" class="social-link" aria-label="Instagram">
@@ -435,19 +436,19 @@
               <li><a href="ayollar.html">Ayollar</a></li>
               <li><a href="bolalar.html">Bolalar</a></li>
               <li><a href="chegirma.html">Chegirma</a></li>
-              <li><a href="#">Yangi Mahsulotlar</a></li>
-              <li><a href="#">Eng Ko'p Sotilganlar</a></li>
+              <li><a href="index.html#yangilar">Yangi Mahsulotlar</a></li>
+              <li><a href="index.html#mahsulotlar">Eng Ko'p Sotilganlar</a></li>
             </ul>
           </div>
 
           <div class="footer-col">
             <h5 class="footer-col__title">Sport</h5>
             <ul class="footer-links">
-              <li><a href="#">Yugurish</a></li>
-              <li><a href="#">Trening</a></li>
-              <li><a href="#">Futbol</a></li>
-              <li><a href="#">Basketbol</a></li>
-              <li><a href="#">Lifestyle</a></li>
+              <li><a href="sport.html#yugurish">Yugurish</a></li>
+              <li><a href="sport.html#trening">Trening</a></li>
+              <li><a href="sport.html#futbol">Futbol</a></li>
+              <li><a href="sport.html#basketbol">Basketbol</a></li>
+              <li><a href="erkaklar.html#lifestyle">Lifestyle</a></li>
               <li><a href="#">Ochiq Havo</a></li>
             </ul>
           </div>
@@ -494,5 +495,8 @@
     </div>
   </footer>
 
+  <script src="products.js"></script>
+  <script src="main.js"></script>
+  <script src="home.js"></script>
 </body>
 </html>
